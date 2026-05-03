@@ -18,4 +18,6 @@ Club announcements + optional video links with a **moderation queue** before any
 npm install && npm run dev
 ```
 
+**PWA manifest** + responsive feed UI. **`MOBILE.md`** — backend + Expo notes.
+
 MIT — portfolio.

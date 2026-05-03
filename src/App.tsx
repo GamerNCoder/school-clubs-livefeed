@@ -78,7 +78,7 @@ export default function App() {
   }
 
   return (
-    <div style={{ maxWidth: 800, margin: '0 auto', padding: '1.25rem' }}>
+    <div style={{ width: '100%', maxWidth: 800, margin: '0 auto', padding: 'clamp(0.75rem, 3vw, 1.25rem)' }}>
       <h1 style={{ marginTop: 0 }}>School clubs livefeed</h1>
       <p style={{ lineHeight: 1.6, color: '#334155' }}>
         Demo: posts start as <strong>pending</strong>; a moderator approves. Everything is <code>localStorage</code>{' '}
@@ -109,7 +109,7 @@ export default function App() {
           Video URL (YouTube embed link or school-hosted)
           <input value={videoUrl} onChange={(e) => setVideoUrl(e.target.value)} style={{ width: '100%', padding: 8, marginTop: 4 }} />
         </label>
-        <button type="button" onClick={submit} style={{ padding: '10px 16px', borderRadius: 8, border: 'none', background: '#0ea5e9', color: '#fff', fontWeight: 600, cursor: 'pointer' }}>
+        <button type="button" onClick={submit} style={{ padding: '12px 18px', minHeight: 44, borderRadius: 8, border: 'none', background: '#0ea5e9', color: '#fff', fontWeight: 600, cursor: 'pointer', fontSize: 16 }}>
           Submit for review
         </button>
       </section>
@@ -177,10 +177,12 @@ export default function App() {
 }
 
 const btn: CSSProperties = {
-  padding: '6px 12px',
+  padding: '10px 14px',
+  minHeight: 44,
   borderRadius: 6,
   border: 'none',
   color: '#fff',
   cursor: 'pointer',
   fontWeight: 600,
+  fontSize: 15,
 }
