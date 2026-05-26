@@ -2,6 +2,12 @@
 
 Club announcements + optional video links with a **moderation queue** before anything appears on the public feed.
 
+## Status (May 2026)
+
+- **Demo-ready**: runs fully in-browser with `localStorage`.
+- **PWA-ready**: mobile-friendly UI + manifest.
+- **Not multi-user yet**: needs real auth + backend before school deployment.
+
 ## MVP scope
 
 - `localStorage` persistence (good for demos; **not** multi-user safe).
